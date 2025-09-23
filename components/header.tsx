@@ -8,10 +8,12 @@ const header = () => {
   const { toggleTheme } = useTheme();
   return (
     <header className="flex justify-between py-1 bg-background">
-      <div className="cursor-pointer hover:bg-hover-anchor p-2 rounded">
-        {/* <Image src="/logo.svg" alt="logo" width={40} height={40} className="" /> */}
+      <Link
+        href="/"
+        className="cursor-pointer hover:bg-hover-anchor p-2 rounded"
+      >
         <Logo />
-      </div>
+      </Link>
       <nav className="flex justify-between items-center">
         <ul className="flex">
           <li className="px-2">

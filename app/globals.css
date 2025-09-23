@@ -7,6 +7,7 @@
   --color-hover-anchor: var(--hover-anchor);
   --color-background: var(--background);
   --colol-icons: var(--icons);
+  --color-divider: var(--divider);
 
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -50,6 +51,7 @@
   --hover-anchor: oklch(0.928 0.006 264.531);
   --background: oklch(1 0 0);
   --icons: oklch(0.141 0.005 285.823);
+  --divider: oklch(0.141 0.005 285.823);
 
   --radius: 0.625rem;
   --foreground: oklch(0.145 0 0);
@@ -88,6 +90,7 @@
   --hover-anchor: oklch(0.765 0.177 163.223);
   --background: oklch(0.145 0 0);
   --icons: oklch(0.985 0.002 247.839);
+  --divider: oklch(1 0 0);
 
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
