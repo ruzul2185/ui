@@ -85,6 +85,7 @@
 }
 
 [data-theme="dark"] {
+  --hover-anchor: oklch(0.765 0.177 163.223);
   --background: oklch(0.145 0 0);
   --icons: oklch(0.985 0.002 247.839);
 
@@ -126,5 +127,11 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  header {
+    @apply max-w-[1200px] mx-auto;
+  }
+  main {
+    @apply max-w-[1200px] mx-auto;
   }
 }

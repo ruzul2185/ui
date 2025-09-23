@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 import Header from "../components/header";
+import Sidebar from "../components/sidebar";
 import { ThemeProvider } from "@/context/ThemeContext";
 
 const geistSans = Geist({
@@ -32,7 +33,12 @@ export default function RootLayout({
       >
         <ThemeProvider>
           <Header />
-          {children}
+          <main className="flex py-5">
+            <div className="flex-1">
+              <Sidebar />
+            </div>
+            <div className="flex-4">{children}</div>
+          </main>
         </ThemeProvider>
       </body>
     </html>
