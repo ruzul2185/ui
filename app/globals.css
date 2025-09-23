@@ -4,7 +4,10 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --color-hover-anchor: var(--hover-anchor);
   --color-background: var(--background);
+  --colol-icons: var(--icons);
+
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
@@ -44,8 +47,11 @@
 }
 
 :root {
-  --radius: 0.625rem;
+  --hover-anchor: oklch(0.928 0.006 264.531);
   --background: oklch(1 0 0);
+  --icons: oklch(0.141 0.005 285.823);
+
+  --radius: 0.625rem;
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -78,8 +84,10 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
-.dark {
+[data-theme="dark"] {
   --background: oklch(0.145 0 0);
+  --icons: oklch(0.985 0.002 247.839);
+
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
@@ -114,7 +122,7 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border outline-ring/50 font-mono;
   }
   body {
     @apply bg-background text-foreground;
