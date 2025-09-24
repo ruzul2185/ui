@@ -1,9 +1,5 @@
 import * as React from "react";
-import { OpenInV0Button } from "@/components/open-in-v0-button";
-import { HelloWorld } from "@/registry/new-york/blocks/hello-world/hello-world";
-import { ExampleForm } from "@/registry/new-york/blocks/example-form/example-form";
-import PokemonPage from "@/registry/new-york/blocks/complex-component/page";
-import { ExampleCard } from "@/registry/new-york/blocks/example-with-css/example-card";
+// import { OpenInV0Button } from "@/components/open-in-v0-button";
 // This page displays items from the custom registry.
 // You are free to implement this with your own design as needed.
 
@@ -22,10 +18,10 @@ export default function Home() {
             <h2 className="text-sm text-muted-foreground sm:pl-3">
               A simple hello world component
             </h2>
-            <OpenInV0Button name="hello-world" className="w-fit" />
+            {/* <OpenInV0Button name="hello-world" className="w-fit" /> */}
           </div>
           <div className="flex items-center justify-center min-h-[400px] relative">
-            <HelloWorld />
+            {/* <HelloWorld /> */}
           </div>
         </div>
 
@@ -34,10 +30,10 @@ export default function Home() {
             <h2 className="text-sm text-muted-foreground sm:pl-3">
               A login form with a CSS file.
             </h2>
-            <OpenInV0Button name="example-with-css" className="w-fit" />
+            {/* <OpenInV0Button name="example-with-css" className="w-fit" /> */}
           </div>
           <div className="flex items-center justify-center min-h-[400px] relative">
-            <ExampleCard />
+            {/* <ExampleCard /> */}
           </div>
         </div>
       </main>

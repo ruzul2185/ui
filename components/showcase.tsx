@@ -4,7 +4,7 @@ import { useState, ReactNode } from "react";
 // import { Button } from "@/components/ruzul/button";
 import { Highlight, Language, themes } from "prism-react-renderer";
 import { cn } from "@/lib/utils";
-import { Button } from "@/registry/new-york/ui/button/button";
+import { Button } from "@/registry/new-york/ui/button";
 
 interface ShowcaseProps {
   component: ReactNode;

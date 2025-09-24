@@ -11,14 +11,16 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-component-primary shine text-component-primary-foreground border-b-4 border-l-4 border-component-border hover:border-0 hover:translate-x-[-4px] hover:translate-y-[4px] hover:bg-component-primary/70 transition-all duration-300",
-        destructive: "bg-destructive text-white hover:bg-destructive/90",
+          "bg-component-primary shine text-component-primary-foreground border-b-4 border-l-4 border-t-[1px] border-r-[1px] border-component-border hover:border-[1px] hover:translate-x-[-4px] hover:translate-y-[4px] hover:bg-component-primary/70 transition-all duration-100",
+        destructive:
+          "bg-destructive shine text-white border-b-4 border-l-4 border-t-[1px] border-r-[1px] border-component-secondary hover:border-[1px] hover:translate-x-[-4px] hover:translate-y-[4px] hover:bg-destructive/70 transition-all duration-100",
         outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+          "shine border-b-4 border-l-4 border-t-[1px] border-r-[1px] border-component-secondary bg-background hover:bg-accent hover:border-[1px] hover:translate-x-[-4px] hover:translate-y-[4px] transition-all duration-100",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
+          "bg-component-secondary shine text-component-primary-foreground border-b-4 border-l-4 border-t-[1px] border-r-[1px] border-component-primary text-secondary-text hover:border-[1px] hover:translate-x-[-4px] hover:translate-y-[4px] hover:bg-component-secondary/70 transition-all duration-100",
+        ghost:
+          "shine bg-white border-ghost border-b-4 border-l-4 border-t-[1px] border-r-[1px] text-ghost hover:text-white hover:bg-ghost/50 hover:border-[1px] hover:translate-x-[-4px] hover:translate-y-[4px] transition-all duration-100",
+        link: "relative text-primary before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-[2px] before:bg-primary before:transition-all before:duration-300 hover:before:w-full hover:before:left-0",
       },
       size: {
         default: "h-9 px-4 py-2",

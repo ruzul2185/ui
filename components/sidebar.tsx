@@ -8,12 +8,21 @@ const data = [
     groupLabel: "Get Started",
     groupContent: [
       {
-        href: "/docs/installation",
-        label: "Installation",
+        href: "/docs/introduction",
+        label: "Introduction",
       },
       {
         href: "/docs/components",
         label: "Components",
+      },
+    ],
+  },
+  {
+    groupLabel: "Installation",
+    groupContent: [
+      {
+        href: "/docs/installation/vite",
+        label: "Vite",
       },
     ],
   },

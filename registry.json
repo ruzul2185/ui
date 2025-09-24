@@ -12,11 +12,6 @@
           "path": "registry/ruzul/ui/button.tsx",
           "type": "registry:component",
           "target": "components/ruzul/button.tsx"
-        },
-        {
-          "path": "registry/ruzul/ui/button.css",
-          "type": "registry:style",
-          "target": "components/ruzul/button.css"
         }
       ]
     }
