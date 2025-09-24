@@ -1,28 +1,4 @@
-.shine {
-  position: relative;
-  display: inline-block;
-  overflow: hidden; /* keep shine inside */
-}
-
-.shine::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -150%;
-  width: 150%;
-  height: 100%;
-  background: linear-gradient(
-    120deg,
-    transparent 0%,
-    oklch(0.95 0.05 90 / 0.3) 50%,
-    transparent 100%
-  );
-  transform: skewX(-20deg);
-  animation: shine 2s infinite;
-  pointer-events: none; /* clicks pass through */
-}
-
-/* Keyframes for sliding shine */
+/* Keyframes for sliding shine for button*/
 @keyframes shine {
   0% {
     left: -150%;
