@@ -33,12 +33,7 @@ export default function RootLayout({
       >
         <ThemeProvider>
           <Header />
-          <main className="flex py-5">
-            <div className="flex-1">
-              <Sidebar />
-            </div>
-            <div className="flex-4">{children}</div>
-          </main>
+          <main>{children}</main>
         </ThemeProvider>
       </body>
     </html>
