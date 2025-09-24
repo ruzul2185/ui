@@ -7,7 +7,7 @@ import Link from "next/link";
 const header = () => {
   const { toggleTheme } = useTheme();
   return (
-    <header className="flex justify-between py-1 bg-background">
+    <header className="flex justify-between sticky top-0 py-1 bg-background z-100">
       <Link
         href="/"
         className="cursor-pointer hover:bg-hover-anchor p-2 rounded"
