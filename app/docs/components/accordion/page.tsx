@@ -2,6 +2,7 @@ import { Button } from "@/components/ruzul/button";
 import Showcase from "@/components/showcase";
 import Tabs from "@/components/tabs";
 import Terminal from "@/components/terminal";
+import { terminalInstallationCommands } from "@/constants/installation";
 import {
   Accordion,
   AccordionContent,
@@ -13,13 +14,7 @@ import path from "path";
 
 const filePath = path.join(process.cwd(), "components/ruzul/accordion.tsx");
 const accordionSource = fs.readFileSync(filePath, "utf-8");
-
-const terminalCommands = [
-  { name: "pnpm", command: "pnpm dlx shadcn@latest add @ruzul/accordion" },
-  { name: "npm", command: "npx shadcn@latest add @ruzul/accordion" },
-  { name: "yarn", command: "yarn dlx shadcn@latest add @ruzul/accordion" },
-  { name: "bun", command: "bunx shadcn@latest add @ruzul/accordion" },
-];
+const terminalCommands = terminalInstallationCommands("@ruzul/accordion");
 
 const tabsData = [
   {
@@ -148,9 +143,6 @@ const page = () => {
             <h2 className="text-lg font-normal tracking-tight py-2">
               {section.title}
             </h2>
-            {/* {section.description && (
-                    <p className="text-sm py-1">{section.description}</p>
-                  )} */}
             {section.items.map((item, i) => (
               <Showcase
                 key={i}
