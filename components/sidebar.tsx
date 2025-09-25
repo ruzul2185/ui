@@ -30,6 +30,10 @@ const data = [
     groupLabel: "Components",
     groupContent: [
       {
+        href: "/docs/components/accordion",
+        label: "Accordion",
+      },
+      {
         href: "/docs/components/button",
         label: "Button",
       },
@@ -51,7 +55,7 @@ const Sidebar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="w-64 border-r-2 border-divider p-4">
+    <div className="w-64 border-r-2 border-divider p-4 sticky top-8">
       {data.map((part: GroupProp, idx) => (
         <div key={idx} className="py-4">
           <div className="font-bold p-1">{part.groupLabel}</div>

@@ -17,6 +17,7 @@
   --color-ghost: var(--ghost);
   --color-highlight: var(--highlight);
   --color-gleem: oklch(0.95 0.05 90 / 0.3) 50%;
+  --color-black: oklch(0.145 0 0);
 
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -153,6 +154,24 @@
   }
   100% {
     left: 150%;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    height: 0px;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0px;
   }
 }
 
