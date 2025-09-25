@@ -1,19 +1,21 @@
+// app/docs/components/accordion/page.tsx
 import { Button } from "@/components/ruzul/button";
 import Showcase from "@/components/showcase";
 import Tabs from "@/components/tabs";
 import Terminal from "@/components/terminal";
 import { terminalInstallationCommands } from "@/constants/installation";
 import {
-  Accordion,
-  AccordionContent,
+  AccordionRoot,
   AccordionItem,
   AccordionTrigger,
+  AccordionContent,
 } from "@/registry/ruzul/ui/accordion";
 import fs from "fs";
 import path from "path";
 
 const filePath = path.join(process.cwd(), "components/ruzul/accordion.tsx");
 const accordionSource = fs.readFileSync(filePath, "utf-8");
+
 const terminalCommands = terminalInstallationCommands("@ruzul/accordion");
 
 const tabsData = [
@@ -50,60 +52,60 @@ const buttonExamples = [
     items: [
       {
         component: (
-          <Accordion.Root
+          <AccordionRoot
             type="single"
             defaultValue="item-1"
             collapsible
             className="w-[300px] rounded-md"
           >
             <AccordionItem value="item-1">
-              <AccordionTrigger>item-1</AccordionTrigger>
-              <AccordionContent>content-1</AccordionContent>
+              <AccordionTrigger>Item 1</AccordionTrigger>
+              <AccordionContent>Content 1</AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-2">
-              <AccordionTrigger>item-2</AccordionTrigger>
-              <AccordionContent>content-2</AccordionContent>
+              <AccordionTrigger>Item 2</AccordionTrigger>
+              <AccordionContent>Content 2</AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-3">
-              <AccordionTrigger>item-3</AccordionTrigger>
-              <AccordionContent>content-3</AccordionContent>
+              <AccordionTrigger>Item 3</AccordionTrigger>
+              <AccordionContent>Content 3</AccordionContent>
             </AccordionItem>
-          </Accordion.Root>
+          </AccordionRoot>
         ),
-        code: `<Accordion.Root
-            type="single"
-            defaultValue="item-1"
-            collapsible
-            className="w-[300px] rounded-md"
-          >
-            <AccordionItem value="item-1">
-              <AccordionTrigger>item-1</AccordionTrigger>
-              <AccordionContent>content-1</AccordionContent>
-            </AccordionItem>
+        code: `<Accordion
+  type="single"
+  defaultValue="item-1"
+  collapsible
+  className="w-[300px] rounded-md"
+>
+  <AccordionItem value="item-1">
+    <AccordionTrigger>Item 1</AccordionTrigger>
+    <AccordionContent>Content 1</AccordionContent>
+  </AccordionItem>
 
-            <AccordionItem value="item-2">
-              <AccordionTrigger>item-2</AccordionTrigger>
-              <AccordionContent>content-2</AccordionContent>
-            </AccordionItem>
+  <AccordionItem value="item-2">
+    <AccordionTrigger>Item 2</AccordionTrigger>
+    <AccordionContent>Content 2</AccordionContent>
+  </AccordionItem>
 
-            <AccordionItem value="item-3">
-              <AccordionTrigger>item-3</AccordionTrigger>
-              <AccordionContent>content-3</AccordionContent>
-            </AccordionItem>
-          </Accordion.Root>`,
+  <AccordionItem value="item-3">
+    <AccordionTrigger>Item 3</AccordionTrigger>
+    <AccordionContent>Content 3</AccordionContent>
+  </AccordionItem>
+</Accordion>`,
       },
     ],
   },
 ];
 
-const page = () => {
+export default function AccordionDocsPage() {
   return (
     <div className="max-w-3xl flex flex-col px-4 py-8 gap-8 w-full">
       {/* Header */}
       <div className="flex flex-col gap-1">
-        <h1 className="text-3xl font-bold tracking-tight">Accordian</h1>
+        <h1 className="text-3xl font-bold tracking-tight">Accordion</h1>
         <p className="text-muted-foreground">
           A vertically stacked set of interactive headings that each reveal an
           associated section of content.
@@ -111,7 +113,7 @@ const page = () => {
       </div>
 
       <div>
-        <Button variant="link">
+        <Button variant="link" asChild>
           <a
             href="https://www.radix-ui.com/primitives/docs/components/accordion"
             target="_blank"
@@ -119,7 +121,7 @@ const page = () => {
             Docs
           </a>
         </Button>
-        <Button variant="link">
+        <Button variant="link" asChild>
           <a
             href="https://www.radix-ui.com/primitives/docs/components/accordion#api-reference"
             target="_blank"
@@ -135,7 +137,7 @@ const page = () => {
         <Tabs tabs={tabsData} />
       </div>
 
-      {/* Button Examples */}
+      {/* Examples */}
       <div>
         <h1 className="text-xl font-semibold tracking-tight">Examples</h1>
         {buttonExamples.map((section, idx) => (
@@ -156,6 +158,4 @@ const page = () => {
       </div>
     </div>
   );
-};
-
-export default page;
+}
