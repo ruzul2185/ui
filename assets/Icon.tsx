@@ -53,6 +53,27 @@ export const ThemeIcon = () => {
   );
 };
 
+export const HamburgerIcon = () => {
+  return (
+    <svg
+      width="40px"
+      height="40px"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-[40px] fill-icons"
+    >
+      <path
+        d="M4 6H20M4 12H14M4 18H9"
+        stroke="currentColor"
+        strokeWidth="1"
+        strokeLinecap="butt"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
 export const Logo = () => {
   return (
     <svg

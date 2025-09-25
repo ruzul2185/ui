@@ -182,9 +182,6 @@
   body {
     @apply bg-background text-foreground;
   }
-  header {
-    @apply max-w-[1200px] mx-auto;
-  }
   main {
     @apply max-w-[1200px] mx-auto;
   }

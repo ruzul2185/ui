@@ -1,6 +1,3 @@
-import fs from "fs";
-import path from "path";
-
 export const terminal = [
   { name: "pnpm", command: "pnpm dlx shadcn@latest add" },
   { name: "npm", command: "npx shadcn@latest add" },
