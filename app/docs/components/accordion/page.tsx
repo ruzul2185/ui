@@ -74,7 +74,7 @@ const buttonExamples = [
             </AccordionItem>
           </AccordionRoot>
         ),
-        code: `<Accordion
+        code: `<AccordionRoot
   type="single"
   defaultValue="item-1"
   collapsible
@@ -94,7 +94,7 @@ const buttonExamples = [
     <AccordionTrigger>Item 3</AccordionTrigger>
     <AccordionContent>Content 3</AccordionContent>
   </AccordionItem>
-</Accordion>`,
+</AccordionRoot>`,
       },
     ],
   },
