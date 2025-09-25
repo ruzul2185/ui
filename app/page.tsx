@@ -214,32 +214,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <footer className="py-12 mt-20 border-t border-gray-200">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg"></div>
-            <span className="font-semibold">UI Library</span>
-          </div>
-          <div className="flex gap-6 text-gray-600">
-            <a href="#" className="hover:text-gray-900 transition-colors">
-              Documentation
-            </a>
-            <a href="#" className="hover:text-gray-900 transition-colors">
-              GitHub
-            </a>
-            <a href="#" className="hover:text-gray-900 transition-colors">
-              NPM
-            </a>
-            <a href="#" className="hover:text-gray-900 transition-colors">
-              Support
-            </a>
-          </div>
-          <div className="text-gray-500 text-sm">
-            © 2025 UI Library. All rights reserved.
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

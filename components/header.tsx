@@ -11,7 +11,7 @@ const Header = () => {
   const { toggleTheme } = useTheme();
 
   return (
-    <header className="border-b-2 border-divider z-50 w-full">
+    <header className="border-b-2 border-divider z-50 w-full sticky top-0">
       {/* Sidebar Overlay */}
       {sidebarIsOpen && (
         <div

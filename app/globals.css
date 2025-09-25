@@ -188,4 +188,7 @@
   section {
     @apply max-w-[1200px] mx-auto;
   }
+  footer {
+    @apply max-w-[1200px] mx-auto;
+  }
 }

@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, ReactNode } from "react";
-import { Button } from "@/components/ruzul/button";
 import { cn } from "@/lib/utils";
 
 interface Tab {
@@ -19,16 +18,16 @@ interface TabsProps {
 export default function Tabs({
   tabs,
   defaultActive = 0,
-  copyButton = false,
-}: TabsProps) {
+}: // copyButton = false,
+TabsProps) {
   const [activeTab, setActiveTab] = useState(defaultActive);
-  const [copied, setCopied] = useState(false);
+  // const [copied, setCopied] = useState(false);
 
-  const handleCopy = (text: string) => {
-    navigator.clipboard.writeText(text);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
+  // const handleCopy = (text: string) => {
+  //   navigator.clipboard.writeText(text);
+  //   setCopied(true);
+  //   setTimeout(() => setCopied(false), 2000);
+  // };
 
   return (
     <div className="flex flex-col gap-4 w-full">
