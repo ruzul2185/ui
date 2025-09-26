@@ -26,6 +26,18 @@
           "target": "components/ruzul/accordion.tsx"
         }
       ]
+    },
+    {
+      "name": "Alert",
+      "dependencies": ["class-variance-authority"],
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/ruzul/ui/alert.tsx",
+          "type": "registry:component",
+          "target": "components/ruzul/alert.tsx"
+        }
+      ]
     }
   ]
 }

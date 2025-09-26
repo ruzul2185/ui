@@ -43,7 +43,7 @@ const Header = () => {
           href="/"
           className="cursor-pointer hover:bg-hover-anchor p-2 rounded flex items-center gap-3"
         >
-          <Logo /> Ruzul
+          <Logo /> Plaguin
         </Link>
 
         {/* Desktop Nav */}

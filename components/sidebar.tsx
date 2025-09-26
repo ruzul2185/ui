@@ -42,6 +42,10 @@ const data = [
         label: "Accordion",
       },
       {
+        href: "/docs/components/alert",
+        label: "Alert",
+      },
+      {
         href: "/docs/components/button",
         label: "Button",
       },

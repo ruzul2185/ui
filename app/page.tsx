@@ -1,3 +1,9 @@
+import {
+  AccordionContent,
+  AccordionItem,
+  AccordionRoot,
+  AccordionTrigger,
+} from "@/components/ruzul/accordion";
 import { Button } from "@/components/ruzul/button";
 import Link from "next/link";
 import * as React from "react";
@@ -18,7 +24,9 @@ export default function Home() {
           components.
         </p>
         <div className="flex gap-4 mt-4">
-          <Button variant="outline">Get Started</Button>
+          <Button variant="outline">
+            <Link href="/docs">Get Started</Link>
+          </Button>
           <Button variant="outline">View Components</Button>
         </div>
       </section>
@@ -126,13 +134,28 @@ export default function Home() {
 
           <div className="p-6 border border-gray-200 rounded-xl hover:shadow-lg transition-shadow">
             <div className="flex flex-col gap-4">
-              <h4 className="font-semibold text-lg">Card</h4>
-              <div className="p-4 border border-gray-200 rounded-lg">
-                <h5 className="font-medium mb-2">Card Title</h5>
-                <p className="text-sm text-gray-600">
-                  A simple card component with title and content.
-                </p>
-              </div>
+              <h4 className="font-semibold text-lg">Accordian</h4>
+              <AccordionRoot
+                type="single"
+                defaultValue="item-1"
+                collapsible
+                className="w-[300px] rounded-md"
+              >
+                <AccordionItem value="item-1">
+                  <AccordionTrigger>Item 1</AccordionTrigger>
+                  <AccordionContent>Content 1</AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-2">
+                  <AccordionTrigger>Item 2</AccordionTrigger>
+                  <AccordionContent>Content 2</AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-3">
+                  <AccordionTrigger>Item 3</AccordionTrigger>
+                  <AccordionContent>Content 3</AccordionContent>
+                </AccordionItem>
+              </AccordionRoot>
               <a href="#" className="text-blue-600 hover:underline text-sm">
                 View Documentation →
               </a>
@@ -193,24 +216,6 @@ export default function Home() {
                 View Documentation →
               </a>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl text-white">
-        <div className="flex flex-col items-center justify-center text-center gap-6">
-          <h3 className="text-3xl font-bold">Ready to Get Started?</h3>
-          <p className="text-xl opacity-90 max-w-2xl">
-            Install the library and start building beautiful interfaces in
-            minutes
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 mt-4">
-            <div className="bg-black bg-opacity-20 px-4 py-3 rounded-lg font-mono text-sm">
-              npm install your-ui-library
-            </div>
-            <button className="px-6 py-3 bg-white text-blue-600 rounded-lg hover:bg-gray-100 transition-colors font-medium">
-              View Installation Guide
-            </button>
           </div>
         </div>
       </section>

@@ -18,6 +18,9 @@
   --color-highlight: var(--highlight);
   --color-gleem: oklch(0.95 0.05 90 / 0.3) 50%;
   --color-black: oklch(0.145 0 0);
+  --color-success: oklch(0.6246 0.1696 150.35);
+  --color-warning: oklch(0.7471 0.1345 94.54);
+  --color-info: oklch(0.5694 0.1736 264.37);
 
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -172,6 +175,18 @@
   }
   to {
     height: 0px;
+  }
+}
+
+@keyframes toggleAlert {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(12px);
+  }
+  50% {
+    transform: translateX(0);
   }
 }
 
