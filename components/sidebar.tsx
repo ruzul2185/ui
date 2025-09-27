@@ -46,6 +46,10 @@ const data = [
         label: "Alert",
       },
       {
+        href: "/docs/components/alert-dialog",
+        label: "Alert Dialog",
+      },
+      {
         href: "/docs/components/button",
         label: "Button",
       },
