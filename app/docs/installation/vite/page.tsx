@@ -83,6 +83,15 @@ export default defineConfig({
 const themeChange =
   "Which color would you like to use as base color? > Neutral";
 
+const registryChange = `{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  ///...
+  "registries": {
+    "@ruzul": "https://plaguin.ruzul.shop/r/{name}.json"
+  }
+}
+`;
+
 const page = () => {
   return (
     <div className="max-w-3xl flex flex-col px-4 py-8 gap-8 w-full">
@@ -271,6 +280,10 @@ const page = () => {
         <h1 className="text-xl font-semibold tracking-tight py-2">
           9. Add Components
         </h1>
+        <p className="text-muted-foreground py-2">
+          Also, add the registry name in order to access it via cli!
+        </p>
+        <Terminal language="json">{registryChange}</Terminal>
         <p className="text-muted-foreground py-2">
           The basic setup is done! Now, you can checkout the component you want
           to add for further instructions on how to add it.
