@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "ruzul",
-  "homepage": "https://ui-ruzul.netlify.app",
+  "homepage": "https://plaguin.ruzul.shop/",
   "items": [
     {
       "name": "Button",
