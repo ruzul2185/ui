@@ -176,7 +176,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="p-6 border border-gray-200 rounded-xl hover:shadow-lg transition-shadow">
+          {/* <div className="p-6 border border-gray-200 rounded-xl hover:shadow-lg transition-shadow">
             <div className="flex flex-col gap-4">
               <h4 className="font-semibold text-lg">Badge</h4>
               <div className="flex gap-2">
@@ -216,7 +216,7 @@ export default function Home() {
                 View Documentation →
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>

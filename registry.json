@@ -56,6 +56,18 @@
       ]
     },
     {
+      "name": "Aspect-Ratio",
+      "dependencies": ["@radix-ui/react-aspect-ratio"],
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/ruzul/ui/aspect-ratio.tsx",
+          "type": "registry:component",
+          "target": "components/ruzul/aspect-ratio.tsx"
+        }
+      ]
+    },
+    {
       "name": "Alert",
       "dependencies": ["class-variance-authority"],
       "type": "registry:component",

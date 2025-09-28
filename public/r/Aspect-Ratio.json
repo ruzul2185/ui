@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "Aspect-Ratio",
+  "type": "registry:component",
+  "dependencies": [
+    "@radix-ui/react-aspect-ratio"
+  ],
+  "files": [
+    {
+      "path": "registry/ruzul/ui/aspect-ratio.tsx",
+      "content": "\"use client\";\r\n\r\nimport * as AspectRatioPrimitive from \"@radix-ui/react-aspect-ratio\";\r\n\r\ntype AspectRatioProps = React.ComponentProps<typeof AspectRatioPrimitive.Root>;\r\n\r\nconst AspectRatio = ({ children, className, ...props }: AspectRatioProps) => {\r\n  return (\r\n    <AspectRatioPrimitive.Root\r\n      data-slot=\"aspect-ratio\"\r\n      className={className}\r\n      {...props}\r\n    >\r\n      {children}\r\n    </AspectRatioPrimitive.Root>\r\n  );\r\n};\r\n\r\nexport default AspectRatio;\r\n",
+      "type": "registry:component",
+      "target": "components/ruzul/aspect-ratio.tsx"
+    }
+  ]
+}

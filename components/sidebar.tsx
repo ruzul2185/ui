@@ -50,6 +50,10 @@ const data = [
         label: "Alert Dialog",
       },
       {
+        href: "/docs/components/aspect-ratio",
+        label: "Aspect Ratio",
+      },
+      {
         href: "/docs/components/button",
         label: "Button",
       },
