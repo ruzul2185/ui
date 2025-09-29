@@ -68,14 +68,14 @@
       ]
     },
     {
-      "name": "Alert",
-      "dependencies": ["class-variance-authority"],
+      "name": "Avatar",
+      "dependencies": ["@radix-ui/react-avatar"],
       "type": "registry:component",
       "files": [
         {
-          "path": "registry/ruzul/ui/alert.tsx",
+          "path": "registry/ruzul/ui/avatar.tsx",
           "type": "registry:component",
-          "target": "components/ruzul/alert.tsx"
+          "target": "components/ruzul/avatar.tsx"
         }
       ]
     }

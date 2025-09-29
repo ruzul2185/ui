@@ -54,6 +54,10 @@ const data = [
         label: "Aspect Ratio",
       },
       {
+        href: "/docs/components/avatar",
+        label: "Avatar",
+      },
+      {
         href: "/docs/components/button",
         label: "Button",
       },
