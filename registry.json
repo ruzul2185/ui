@@ -4,18 +4,6 @@
   "homepage": "https://plaguin.ruzul.shop/",
   "items": [
     {
-      "name": "Button",
-      "dependencies": ["@radix-ui/react-slot", "class-variance-authority"],
-      "type": "registry:component",
-      "files": [
-        {
-          "path": "registry/ruzul/ui/button.tsx",
-          "type": "registry:component",
-          "target": "components/ruzul/button.tsx"
-        }
-      ]
-    },
-    {
       "name": "Accordion",
       "dependencies": ["@radix-ui/react-accordion"],
       "type": "registry:component",
@@ -76,6 +64,30 @@
           "path": "registry/ruzul/ui/avatar.tsx",
           "type": "registry:component",
           "target": "components/ruzul/avatar.tsx"
+        }
+      ]
+    },
+    {
+      "name": "Badge",
+      "dependencies": ["@radix-ui/react-slot", "class-variance-authority"],
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/ruzul/ui/badge.tsx",
+          "type": "registry:component",
+          "target": "components/ruzul/badge.tsx"
+        }
+      ]
+    },
+    {
+      "name": "Button",
+      "dependencies": ["@radix-ui/react-slot", "class-variance-authority"],
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "registry/ruzul/ui/button.tsx",
+          "type": "registry:component",
+          "target": "components/ruzul/button.tsx"
         }
       ]
     }

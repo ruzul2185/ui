@@ -58,6 +58,10 @@ const data = [
         label: "Avatar",
       },
       {
+        href: "/docs/components/badge",
+        label: "Badge",
+      },
+      {
         href: "/docs/components/button",
         label: "Button",
       },
